@@ -28,5 +28,14 @@ public static partial class WeatherForecastApi
         .WithName("GetWeatherForecast")
         .WithOpenApi()
         .Produces<WeatherForecast[]>(StatusCodes.Status200OK);
+
+        app.MapGet("/weatherforecast/{id:int}", (int id) =>
+        {
+            var forecast = new WeatherForecast(DateOnly.FromDateTime(DateTime.Now.AddDays(id)), 0, "Unknown");
+            return forecast;
+        })
+        .WithName("GetWeatherForecastById")
+        .WithOpenApi()
+        .Produces<WeatherForecast>(StatusCodes.Status200OK);
     }
 }
