@@ -1,0 +1,29 @@
+{
+  "name": "sample.semantic.versioning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alassane-developer/Sample.Semantic.Versioning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alassane-developer/Sample.Semantic.Versioning/issues"
+  },
+  "homepage": "https://github.com/alassane-developer/Sample.Semantic.Versioning#readme",
+  "devDependencies": {
+    "semantic-release": "^24.2.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.4"
+  }
+}
