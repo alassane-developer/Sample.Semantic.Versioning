@@ -3,16 +3,13 @@ name: Semantic Release
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch: # Allow manual trigger
     # No additional configuration needed
 
 jobs:
   release:
-    runs-on: ${{ matrix.os }} # Use available GitHub runners
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest] # Run on multiple OSes
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
