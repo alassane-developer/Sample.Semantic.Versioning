@@ -2,6 +2,10 @@ namespace Sample.Semantic.Versioning.Extensions;
 
 public static partial class WeatherForecastApi
 {
+    /// <summary>
+    /// Maps the weather forecast endpoint to the application.
+    /// </summary>
+    /// <param name="app">The web application.</param>
     public static void MapWeatherForecastEndpoint(this WebApplication app)
     {
         var summaries = new[]
