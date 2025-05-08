@@ -22,6 +22,7 @@ public static partial class WeatherForecastApi
             return forecast;
         })
         .WithName("GetWeatherForecast")
-        .WithOpenApi();
+        .WithOpenApi()
+        .Produces<WeatherForecast[]>(StatusCodes.Status200OK);
     }
 }
