@@ -14,6 +14,12 @@ module.exports = {
         message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
       }],
       '@semantic-release/github'
+    ],
+    verifyConditions: [
+      '@semantic-release/github',
+      {
+        path: '@semantic-release/exec',
+        cmd: 'echo $GH_TOKEN' // Ensure GH_TOKEN is available
+      }
     ]
   }
-  
